@@ -1,6 +1,6 @@
 body{
 
-    background-color: darkblue;
+    background-color: #686968;
 }
 
 
@@ -35,7 +35,7 @@ border-radius: 6px;
 
 .btn{
 
-background-color: lightgreen;
+background-color: #71b61b;
 width: 108%;
 padding: 10px;
 border-radius: 7px;
@@ -46,7 +46,7 @@ cursor: pointer;
 
 .btn:hover{
 
-background-color: darkgreen;
+background-color: #71b61b;;
 }
 
 .form-box .form-group input{
