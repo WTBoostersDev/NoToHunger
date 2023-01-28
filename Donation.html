@@ -5,235 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donation</title>
-    <style>
-        body {
-    color: #0e0d0d;
-    font-weight: 500;
-    background:#a6a8a6;
-    font-family: 'Quicksand', sans-serif;
-}
-
-h1,
-h2, 
-h3, 
-h4,
-h5, 
-h6 {
-    color: #0b0b0c;
-}
-
-.container-fluid {
-    max-width: 1366px;
-}
-
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
-    font-size: inherit;
-    margin-left: 0;
-}
-
-.page-heading {
-    position: relative;
-    margin-bottom: 45px;
-    padding: 210px 0 90px 0;
-    text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(image/donate.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.page-heading h2 {
-    position: relative;
-    color: black;
-    font-size: 60px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    padding-bottom: 5px;
-}
-
-.page-heading h2::after {
-    position: absolute;
-    content: "";
-    width: 100px;
-    height: 2px;
-    left: calc(50% - 50px);
-    bottom: 0;
-    background: #272727;
-}
-
-.page-heading a {
-    position: relative;
-    padding: 0 12px;
-    font-size: 22px;
-    color: #ffffff;
-}
-
-.page-heading a:hover {
-    color: black
-
-.page-heading a::after {
-    position: absolute;
-    content: "/";
-    width: 8px;
-    height: 8px;
-    top: -2px;
-    right: -7px;
-    text-align: center;
-    color: #ffffff;
-}
-
-.page-heading a:last-child::after {
-    display: none;
-}
-
-@media (max-width: 991.98px) {
-    .page-heading {
-        padding: 60px 0;
-    }
-    
-    .page-heading h2 {
-        font-size: 45px;
-    }
-    
-    .page-heading a {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .page-heading {
-        padding: 45px 0;
-    }
-    
-    .page-heading h2 {
-        font-size: 35px;
-    }
-    
-    .page-heading a {
-        font-size: 18px;
-    }
-}
-
-
-/*******************************/
-/******* Section Header ********/
-/*******************************/
-.section-heading {
-    position: relative;
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto 45px auto;
-}
-
-
-
-.section-heading h2 {
-    margin: 0;
-    font-size: 45px;
-    font-weight: 700;
-}
-
-.section-heading {
-    position: relative;
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto 45px auto;
-}
-
-.section-heading p {
-    margin-bottom: 5px;
-    position: relative;
-    font-size: 22px;
-    font-weight: 600;
-    text-transform: capitalize;
-    color: black;
-}
-
-}
-    .donate {
-        position: relative;
-        width: 100%;
-        margin: 45px 0;
-        background: rgba(0, 0, 0, .5);
-    }
-    
-    .donate .donate-content {
-        padding: 45px 0 15px 0;
-    }
-    
-    .container .donate {
-        margin: 90px 0;
-    }
-    
-    .container .donate .donate-content {
-        padding: 45px 30px 15px 30px;
-    }
-    
-    .donate .donate-content .section-header {
-        margin-bottom: 30px;
-    }
-    
-    .donate .donate-content .section-header h2 {
-        color: #131212;
-    }
-    
-    .donate .donate-text p {
-        color: #131212
-        font-size: 18px;
-    }
-    
-    .donate .donate-form {
-        padding: 90px 30px;
-        background:white
-    }
-    
-    .donate .donate-form .control-group {
-        margin-bottom: 15px;
-    }
-    
-    .donate .donate-form .form-control {
-        height: 60px;
-        color:#131212;
-        padding: 0 15px;
-        border-radius: 0;
-        border: 1px solid#131212 ;
-        background: transparent;
-    }
-    
-    .donate .donate-form .form-control::placeholder {
-        color:#131212;
-        opacity: 1;
-    }
-    
-    .donate .donate-form .form-control:-ms-input-placeholder,
-    .donate .donate-form .form-control::-ms-input-placeholder {
-        color: #131212;
-    }
-    
-    .donate .donate-form .btn-group {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 15px;
-    }
-    
-    .donate .donate-form .btn.btn-custom {
-        padding: 15px 0;
-        width: 100%;
-        height: 60px;
-        color: #111010;
-        border: 1px solid #131212;
-
-    }
-    
-    .donate .donate-form .btn.btn-custom:hover,
-    .donate .donate-form .btn.btn-custom.active {
-        color: #111111;
-        border: 1px solid #131212;
-    }
-    
-    </style>
+    <link rel = "stylesheet"  type = "text/css" href = "assets/css/donation.css">
 </head>
 <body>
     
@@ -243,10 +15,10 @@ h6 {
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>Donate Now</h2>
+                    <h1>Donate Now</h1>
                 </div>
-                <div class="col-12">
-            
+                <div class="container">
+                <img src="assets/images/events/donate.jpg" alt="" height="600px" width="1000px">
                 </div>
             </div>
         </div>
@@ -258,13 +30,12 @@ h6 {
                 
                     <div class="donate-content">
                         <div class="section-heading">
-                            <p>Donate Now</p>
                             <h2>Let's donate to say No To Hunger</h2>
                         </div>
                         <div class="donate-text">
                             <p>
-                               Hunger is the leading cause of death in the world. Our planet has provided us with tremendous resources, but unequal access and inefficient hadling leaves millions of people malnourished. we can sustain the world's population if you donate.
-                               Donate now to make sure no one suffers from hunger again
+                               Hunger is the leading cause of death in the world.<br> Our planet has provided us with tremendous resources,<br> but unequal access and inefficient hadling leaves millions of people malnourished.<br> We can sustain the world's population if you donate.<br>
+                               Donate now to make sure no one suffers from hunger again!
                             </p>
                         </div>
                     </div>
@@ -280,23 +51,23 @@ h6 {
                             </div>
                             <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                 <label class="btn btn-custom active">
-                                    <input type="radio" name="options" checked> $10
+                                    <input type="radio" name="options" checked> $100
                                 </label>
                                 <label class="btn btn-custom">
-                                    <input type="radio" name="options"> $20
+                                    <input type="radio" name="options"> $200
                                 </label>
                                 <label class="btn btn-custom">
-                                    <input type="radio" name="options"> $30
+                                    <input type="radio" name="options"> $300
                                 </label>
                                 <label class="btn btn-custom">
-                                    <input type="radio" name="options"> $50
+                                    <input type="radio" name="options"> $500
                                 </label>
                                 <label class="btn btn-custom">
-                                    <input type="radio" name="options"> $100
+                                    <input type="radio" name="options"> $1000
                                 </label>
                             </div>
                             <div>
-                                <button class="btn btn-custom" type="submit">Donate Now</button>
+                                <button class="btn btn-custom" type="submit" onclick="toSubmit()" id="submit-button">Donate Now</button>
                             </div>
                         </form>
                     </div>
@@ -305,4 +76,9 @@ h6 {
         </div>
     </div>
 </body>
+<script>
+toSubmit = () => {
+    alert("Thank you for your donation!");
+}
+</script>
 </html>
