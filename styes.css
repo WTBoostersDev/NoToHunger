@@ -1,0 +1,17 @@
+.one{
+font-size: 100%;
+}
+.two{
+    padding-top: 55px;
+    
+}
+.img{
+    height: 100%;
+    width:100% ;
+    align-items: center;
+    margin-left: 50px;
+    border-left: 50%;
+}
+.three{
+    background-color: brown;
+}
