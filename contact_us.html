@@ -140,30 +140,37 @@
 
                 <div style="padding:20px" class="col-sm-7">
                     <h2 >Have any questions? Leave us a message below. </h2> <br>
+                    <form method="post" action="#">
                     <div class="row cont-row">
-                        <div  class="col-sm-3"><label>Enter Name </label><span>:</span></div>
-                        <div class="col-sm-8"><input type="text" placeholder="Enter Name" name="name" class="form-control input-sm"  ></div>
+                        <div  class="col-sm-3"><label for="name">Enter Name </label><span>:</span></div>
+                        <div class="col-sm-8"><input type="text" 
+                            placeholder="Enter Full Name" name="name" 
+                            class="form-control input-sm" id="name" required ></div>
                     </div>
                     <div  class="row cont-row">
-                        <div  class="col-sm-3"><label>Email Address </label><span>:</span></div>
-                        <div class="col-sm-8"><input type="text" name="name" placeholder="Enter Email Address" class="form-control input-sm"  ></div>
+                        <div  class="col-sm-3"><label for="email">Email Address </label><span>:</span></div>
+                        <div class="col-sm-8"><input type="email" name="email" 
+                            placeholder="Enter Email Address" class="form-control input-sm"
+                             id="email" required  ></div>
                     </div>
                     <div  class="row cont-row">
-                        <div  class="col-sm-3"><label>Mobile Number</label><span>:</span></div>
-                        <div class="col-sm-8"><input type="text" name="name" placeholder="Enter Mobile Number" class="form-control input-sm"  ></div>
+                        <div  class="col-sm-3"><label for="phone">Mobile Number</label><span>:</span></div>
+                        <div class="col-sm-8"><input type="tel" name="phone" placeholder="Enter Mobile Number"
+                             class="form-control input-sm" id="phone" required ></div>
                     </div>
                     <div  class="row cont-row">
                         <div  class="col-sm-3"><label>Enter Message</label><span>:</span></div>
                         <div class="col-sm-8">
-                            <textarea rows="5" placeholder="Enter Your Message" class="form-control input-sm"></textarea>
+                            <textarea rows="5" placeholder="Enter Your Message" class="form-control input-sm" required></textarea>
                         </div>
                     </div>
                     <div style="margin-top:10px;" class="row">
                         <div style="padding-top:10px;" class="col-sm-3"><label></label></div>
                         <div class="col-sm-8">
-                            <button class="btn btn-primary btn-sm">Send Message</button>
+                            <button class="btn btn-primary btn-sm" type="submit" onclick="toSubmit()">Send Message</button>
                         </div>
                     </div>
+                    </form>
                 </div>
                 <div class="col-sm-5">
 
@@ -281,9 +288,14 @@ hunger.
         </span>
             </div>
 
-        </div>
-          
-    
+        </div>  
+        
+        <script>
+            toSubmit = () => {
+                alert("Thank you for getting in touch!");
+            }
+            </script>
+
 </body>
 
 <script src="assets/js/jquery-3.2.1.min.js"></script>
