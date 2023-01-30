@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+    <link rel = "stylesheet"  type = "text/css" href = "assets/css/donation.css">
+</head>
+<body>
+    
+  
+ 
+    <div class="page-heading">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Donate Now</h1>
+                </div>
+                <div class="container">
+                <img src="assets/images/events/donate.jpg" alt="" height="600px" width="1000px">
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="container">
+        <div class="donate" data-parallax="scroll">
+            <div class="row align-items-center">
+                
+                    <div class="donate-content">
+                        <div class="section-heading">
+                            <h2>Let's donate to say No To Hunger</h2>
+                        </div>
+                        <div class="donate-text">
+                            <p>
+                               Hunger is the leading cause of death in the world.<br> Our planet has provided us with tremendous resources,<br> but unequal access and inefficient hadling leaves millions of people malnourished.<br> We can sustain the world's population if you donate.<br>
+                               Donate now to make sure no one suffers from hunger again!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="donate-form">
+                        <form action="#">
+                            <div class="control-group">
+                                <input type="text" class="form-control" placeholder="Name" required="required" />
+                            </div>
+                            <div class="control-group">
+                                <input type="email" class="form-control" placeholder="Email" required="required" />
+                            </div>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-custom active">
+                                    <input type="radio" name="options" checked> $100
+                                </label>
+                                <label class="btn btn-custom">
+                                    <input type="radio" name="options"> $200
+                                </label>
+                                <label class="btn btn-custom">
+                                    <input type="radio" name="options"> $300
+                                </label>
+                                <label class="btn btn-custom">
+                                    <input type="radio" name="options"> $500
+                                </label>
+                                <label class="btn btn-custom">
+                                    <input type="radio" name="options"> $1000
+                                </label>
+                            </div>
+                            <div>
+                                <button class="btn btn-custom" type="submit" onclick="toSubmit()" id="submit-button">Donate Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+toSubmit = () => {
+    alert("Thank you for your donation!");
+}
+</script>
+</html>

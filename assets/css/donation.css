@@ -1,0 +1,239 @@
+body {
+    color: #0e0d0d;
+    font-weight: 500;
+    background:#a6a8a6;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+h1, h2{
+    color: #0b0b0c;
+}
+
+.container-fluid {
+    max-width: 1366px;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-size: inherit;
+    margin-left: 0;
+}
+
+.page-heading {
+    position: relative;
+    margin-bottom: 50px;
+    padding: 50px 0 90px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(assets/images/events/donate.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-heading  h1 {
+    position: relative;
+    color: black;
+    font-size: 75px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    background-color: #a6a8a6;
+}
+
+.page-heading h2::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    left: calc(50% - 50px);
+    bottom: 0;
+    background: #272727;
+}
+
+.page-heading a {
+    position: relative;
+    padding: 0 12px;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.page-heading a:hover {
+    color: black
+}
+
+.page-heading a::after {
+    position: absolute;
+    content: "/";
+    width: 8px;
+    height: 8px;
+    top: -2px;
+    right: -7px;
+    text-align : center;
+    color: #ffffff;
+}
+
+.page-heading a:last-child::after {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    .page-heading {
+        padding: 60px 0;
+    }
+    
+    .page-heading h2 {
+        font-size: 45px;
+    }
+    
+    .page-heading a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .page-heading {
+        padding: 45px 0;
+    }
+    
+    .page-heading h2 {
+        font-size: 35px;
+    }
+    
+    .page-heading a {
+        font-size: 18px;
+    }
+}
+
+
+/*******************************/
+/******* Section Header ********/
+/*******************************/
+.section-heading {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 45px auto;
+    
+}
+
+
+
+.section-heading h2 {
+    margin: 0;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.section-heading {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 45px auto;
+}
+
+.section-heading p {
+    margin-bottom: 5px;
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: black;
+}
+
+
+    .donate {
+        position: relative;
+        width: 100%;
+        margin: 45px 0;
+        background: #a6a8a6;
+    }
+    
+    .donate .donate-content {
+        padding: 45px 0 15px 0;
+    }
+    
+    .container .donate {
+        margin: 90px 0;
+    }
+    
+    .container .donate .donate-content {
+        padding: 45px 30px 15px 30px;
+    }
+    
+    .donate .donate-content .section-header {
+        margin-bottom: 30px;
+    }
+    
+    .donate .donate-content .section-header h2 {
+        color: #131212;
+    }
+    
+    .donate .donate-text p {
+        color: #131212;
+        font-size: 18px;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .donate .donate-form {
+        padding: 90px 30px;
+        background:white
+    }
+    
+    .donate .donate-form .control-group {
+        margin-bottom: 15px;
+    }
+    
+    .donate .donate-form .form-control {
+        height: 60px;
+        color:#131212;
+        padding: 0 15px;
+        border-radius: 0;
+        border: 1px solid#131212 ;
+        background: transparent;
+    }
+    
+    .donate .donate-form .form-control::placeholder {
+        color:#131212;
+        opacity: 1;
+    }
+    
+    .donate .donate-form .form-control:-ms-input-placeholder,
+    .donate .donate-form .form-control::-ms-input-placeholder {
+        color: #131212;
+    }
+    
+    .donate .donate-form .btn-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    
+    .donate .donate-form .btn.btn-custom {
+        padding: 15px 0;
+        width: 100%;
+        height: 60px;
+        color: #111010;
+        border: 1px solid #131212;
+
+    }
+    
+    .donate .donate-form .btn.btn-custom:hover,
+    .donate .donate-form .btn.btn-custom.active {
+        color: #111111;
+        border: 1px solid #131212;
+    }
+
+    #submit-button {
+        background-color: #71b61b;
+        width: 200px;
+        padding: 10px;
+        margin-left: 400px;
+        border-radius: 7px;
+        cursor: pointer;
+        justify-content: center;
+    }
