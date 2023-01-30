@@ -42,7 +42,7 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="donate-form">
-                        <form action="#">
+                        <form action="/assets/wfp_donation.pdf" method="get">
                             <div class="control-group">
                                 <input type="text" class="form-control" placeholder="Name" required="required" />
                             </div>
@@ -67,7 +67,7 @@
                                 </label>
                             </div>
                             <div>
-                                <button class="btn btn-custom" type="submit" onclick="toSubmit()" id="submit-button">Donate Now</button>
+                                <button class="btn btn-custom" type="submit" onclick="formAction()" id="submit-button">Donate Now</button>
                             </div>
                         </form>
                     </div>
@@ -77,8 +77,8 @@
     </div>
 </body>
 <script>
-toSubmit = () => {
-    alert("Thank you for your donation!");
+formAction = () => {
+    document.myForm.action = "/assets/wfp_donation.pdf";
 }
 </script>
 </html>
