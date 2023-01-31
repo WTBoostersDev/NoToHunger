@@ -42,7 +42,7 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="donate-form">
-                        <form action="/assets/wfp_donation.pdf" method="get">
+                        <form action="/NoToHunger/assets/wfp_donation.pdf" method="get" id="myForm">
                             <div class="control-group">
                                 <input type="text" class="form-control" placeholder="Name" required="required" />
                             </div>
@@ -78,7 +78,7 @@
 </body>
 <script>
 formAction = () => {
-    document.myForm.action = "/assets/wfp_donation.pdf";
+    document.getElementById(myForm).action = "/NoToHunger/assets/wfp_donation.pdf";
 }
 </script>
 </html>
